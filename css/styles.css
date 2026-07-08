@@ -777,17 +777,40 @@ h1 em {
   border-radius: 100px;
 }
 
-.mini-chat { display: flex; flex-direction: column; gap: 7px; width: 100%; max-width: 210px; }
+.mini-chat { display: flex; flex-direction: column; gap: 5px; width: 100%; max-width: 216px; }
+.mc-head { display: flex; align-items: center; gap: 6px; margin-bottom: 2px; }
+.mc-ava {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--navy);
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.mc-ava img { width: 12px; height: auto; display: block; }
+.mc-name { font-size: .72rem; font-weight: 700; color: var(--ink); }
+.mc-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+  margin-left: auto;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, .16);
+}
 .mini-bubble {
-  font-size: .74rem;
+  font-size: .7rem;
   font-weight: 600;
-  padding: 8px 12px;
+  padding: 6px 10px;
   border-radius: 12px;
   width: fit-content;
-  max-width: 100%;
+  max-width: 90%;
+  line-height: 1.25;
 }
-.mb-user { background: #fff; border: 1px solid var(--line); align-self: flex-end; border-bottom-right-radius: 4px; }
-.mb-ai { background: var(--brand); color: #fff; border-bottom-left-radius: 4px; }
+.mb-user { background: #fff; border: 1px solid var(--line); color: var(--ink); align-self: flex-end; border-bottom-right-radius: 4px; }
+.mb-ai { background: var(--brand); color: #fff; align-self: flex-start; border-bottom-left-radius: 4px; }
 
 /* ---------- deep dives ---------- */
 
