@@ -104,11 +104,11 @@ if (HAS_GSAP) {
       scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true }
     });
   });
-  const aiGrid = document.querySelector('#brix-ai .dd-grid');
+  const aiGrid = document.querySelector('#ai-chat .container');
   if (aiGrid) {
     gsap.fromTo(aiGrid, { yPercent: 5 }, {
       yPercent: -5, ease: 'none',
-      scrollTrigger: { trigger: '#brix-ai', start: 'top bottom', end: 'bottom top', scrub: true }
+      scrollTrigger: { trigger: '#ai-chat', start: 'top bottom', end: 'bottom top', scrub: true }
     });
   }
   const ctaIn = document.querySelector('.cta-in');
@@ -436,12 +436,169 @@ document.querySelectorAll('.price-cta, #ctaInstall, .btn-primary.btn-lg').forEac
   io.observe(box);
 })();
 
+/* ---------- why-brix chat panel: gsap entrance ---------- */
+
+(function whyBrixChat() {
+  const panel = document.getElementById('wbPanel');
+  if (!panel || !HAS_GSAP) return;
+
+  const typing = document.getElementById('wbTyping');
+  const bubbles = document.querySelectorAll('#wbThread .wb-bubble');
+  if (!bubbles.length) return;
+
+  gsap.set(bubbles, { opacity: 0, y: 12 });
+
+  ScrollTrigger.create({
+    trigger: panel,
+    start: 'top 75%',
+    once: true,
+    onEnter: () => {
+      const tl = gsap.timeline();
+      tl.call(() => typing.classList.add('show'))
+        .to({}, { duration: .7 })
+        .call(() => typing.classList.remove('show'))
+        .to(bubbles, {
+          opacity: 1, y: 0, duration: .5, ease: 'power2.out', stagger: .13
+        });
+    }
+  });
+})();
+
+/* ---------- why-aov meters: gsap fill on scroll ---------- */
+
+(function whyAovMeters() {
+  const card = document.getElementById('waovCard');
+  if (!card || !HAS_GSAP) return;
+
+  const fills = card.querySelectorAll('.waov-meter-fill');
+  const targets = [...fills].map(f => f.style.width);
+  gsap.set(fills, { width: '0%' });
+
+  ScrollTrigger.create({
+    trigger: card,
+    start: 'top 75%',
+    once: true,
+    onEnter: () => {
+      fills.forEach((f, i) => {
+        gsap.to(f, { width: targets[i], duration: 1.1, ease: 'power2.out', delay: i * .18 });
+      });
+    }
+  });
+})();
+
+/* ---------- why-aov chips: gsap stagger pop-in ---------- */
+
+(function whyAovChips() {
+  const wrap = document.getElementById('waovChips');
+  if (!wrap || !HAS_GSAP) return;
+
+  const chips = wrap.querySelectorAll('.waov-chip');
+  if (!chips.length) return;
+  gsap.set(chips, { opacity: 0, y: 10, scale: .92 });
+
+  ScrollTrigger.create({
+    trigger: wrap,
+    start: 'top 85%',
+    once: true,
+    onEnter: () => gsap.to(chips, {
+      opacity: 1, y: 0, scale: 1, duration: .45, ease: 'back.out(1.7)', stagger: .05
+    })
+  });
+})();
+
+/* ---------- before/after: gsap directional stagger ---------- */
+
+(function beforeAfterReveal() {
+  const grid = document.querySelector('#before-after .ba-grid');
+  if (!grid || !HAS_GSAP) return;
+
+  const before = grid.querySelectorAll('.ba-before .ba-list li');
+  const after = grid.querySelectorAll('.ba-after .ba-list li');
+  if (!before.length && !after.length) return;
+  gsap.set(before, { opacity: 0, x: -18 });
+  gsap.set(after, { opacity: 0, x: 18 });
+
+  ScrollTrigger.create({
+    trigger: grid,
+    start: 'top 72%',
+    once: true,
+    onEnter: () => {
+      gsap.to(before, { opacity: 1, x: 0, duration: .5, ease: 'power2.out', stagger: .07 });
+      gsap.to(after, { opacity: 1, x: 0, duration: .5, ease: 'power2.out', stagger: .07, delay: .18 });
+    }
+  });
+})();
+
+/* ---------- trusted-by: gsap country chip pop-in ---------- */
+
+(function countriesReveal() {
+  const wrap = document.querySelector('.countries-row');
+  if (!wrap || !HAS_GSAP) return;
+
+  const chips = wrap.querySelectorAll('.country-chip');
+  if (!chips.length) return;
+  gsap.set(chips, { opacity: 0, y: 8, scale: .85 });
+
+  ScrollTrigger.create({
+    trigger: wrap,
+    start: 'top 82%',
+    once: true,
+    onEnter: () => gsap.to(chips, {
+      opacity: 1, y: 0, scale: 1, duration: .4, ease: 'back.out(1.8)', stagger: .05
+    })
+  });
+})();
+
+/* ---------- case study teaser: gsap entrance ---------- */
+
+(function csTeaserReveal() {
+  const el = document.getElementById('csTeaser');
+  if (!el || !HAS_GSAP) return;
+  gsap.set(el, { opacity: 0, y: 16, scale: .97 });
+
+  ScrollTrigger.create({
+    trigger: el,
+    start: 'top 82%',
+    once: true,
+    onEnter: () => gsap.to(el, { opacity: 1, y: 0, scale: 1, duration: .6, ease: 'power3.out' })
+  });
+})();
+
+/* ---------- bundle builder: gsap parallax (mirrors brix-ai treatment) ---------- */
+
+(function bundleParallax() {
+  if (!HAS_GSAP) return;
+  const mock = document.querySelector('#bundles .builder-mock');
+  if (!mock) return;
+  gsap.fromTo(mock, { yPercent: 4 }, {
+    yPercent: -4, ease: 'none',
+    scrollTrigger: { trigger: '#bundles', start: 'top bottom', end: 'bottom top', scrub: true }
+  });
+})();
+
+/* ---------- analytics: gsap line-chart draw-in ---------- */
+
+(function analyticsChartDraw() {
+  if (!HAS_GSAP) return;
+  const line = document.querySelector('#analytics .chart-line');
+  if (!line) return;
+  const len = line.getTotalLength();
+  gsap.set(line, { strokeDasharray: len, strokeDashoffset: len });
+
+  ScrollTrigger.create({
+    trigger: '#analytics .dash-chart',
+    start: 'top 75%',
+    once: true,
+    onEnter: () => gsap.to(line, { strokeDashoffset: 0, duration: 1.4, ease: 'power2.inOut' })
+  });
+})();
+
 /* ---------- deep-dive: scroll-driven cart states ---------- */
 
 if (HAS_GSAP) {
   const mm = gsap.matchMedia();
   mm.add('(min-width: 1021px)', () => {
-    const grid = document.querySelector('#smart-cart .dd-grid');
+    const grid = document.querySelector('#cart-editor .dd-grid');
     if (!grid) return;
     const steps = grid.querySelectorAll('.dd-step');
     const callouts = grid.querySelectorAll('.dd-callout');

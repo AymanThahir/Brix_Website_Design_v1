@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=4">
+  <link rel="stylesheet" href="css/styles.css?v=17">
   <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 <body>
@@ -45,6 +45,10 @@
   <div class="hero-glow" aria-hidden="true"></div>
   <div class="container hero-grid">
     <div class="hero-copy">
+      <a class="hero-badge reveal" href="#install" style="--d:.02s">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M15.34 3.03c-.09-.06-.19-.06-.31-.03l-.58.18c-.14-.4-.33-.83-.61-1.26C13.28.98 12.6.5 11.9.5h-.15c-.5-.62-1.13-.9-1.68-.88-1.05.03-2.09.79-2.94 2.13-.6.95-1.05 2.14-1.18 3.06l-2.1.65c-.62.2-.64.22-.72.8L1.5 19.44 14.29 22 21 20.55S15.42 3.09 15.34 3.03z"/></svg>
+        <span class="hero-badge-stars">★★★★★</span> <b>4.9</b> on the Shopify App Store
+      </a>
       <h1 class="reveal" style="--d:.08s">Your Shopify cart isn’t the end of the journey — it’s <em>where revenue is being lost</em>.</h1>
       <p class="hero-sub reveal" style="--d:.16s">Brix helps Shopify brands increase average order value with AI-powered cart upsells, Frequently Bought Together offers, rewards progress bars, coupon sliders and real-time AI analysis — all inside a high-converting cart drawer.</p>
       <div class="hero-ctas reveal" style="--d:.24s">
@@ -123,17 +127,183 @@
   </div>
 </section>
 
-<!-- ============ SOCIAL PROOF ============ -->
-<section class="logos">
+<!-- ============ WHY BRIX ============ -->
+<section class="section" id="why-brix">
+  <div class="container f-grid">
+    <div class="f-copy">
+      <p class="eyebrow reveal">Why Brix</p>
+      <h2 class="reveal">Built for Shopify brands that want smarter cart growth</h2>
+      <p class="reveal">Brix is not just a Shopify cart drawer app. It is an AI-powered AOV optimization platform built to help merchants understand what to offer, where to show it, and how to improve every cart interaction.</p>
+      <p class="reveal" style="--d:.06s">From cart rewards progress bars to AI upsell suggestions, Brix gives your store the tools to turn single-product purchases into higher-value orders.</p>
+    </div>
+    <div class="wb-visual">
+      <div class="wb-glow" aria-hidden="true"></div>
+      <div class="wb-panel reveal" style="--d:.1s" id="wbPanel">
+        <div class="wb-head">
+          <span class="wb-ava"><img src="assets/brix-mark-light.png" alt=""></span>
+          <span class="wb-head-name">Brix AI</span>
+          <span class="wb-live"><span class="wb-live-dot" aria-hidden="true"></span>Always on</span>
+        </div>
+        <div class="wb-thread" id="wbThread">
+          <div class="wb-typing" id="wbTyping"><span></span><span></span><span></span></div>
+          <div class="wb-bubble"><span class="wb-check" aria-hidden="true">✓</span>Recommend the right add-on products inside the cart</div>
+          <div class="wb-bubble"><span class="wb-check" aria-hidden="true">✓</span>Create Frequently Bought Together offers that feel natural</div>
+          <div class="wb-bubble"><span class="wb-check" aria-hidden="true">✓</span>Show coupon codes directly inside the cart drawer</div>
+          <div class="wb-bubble"><span class="wb-check" aria-hidden="true">✓</span>Motivate shoppers with a gamified rewards progress bar</div>
+          <div class="wb-bubble"><span class="wb-check" aria-hidden="true">✓</span>Track cart performance with AI analysis</div>
+          <div class="wb-bubble"><span class="wb-check" aria-hidden="true">✓</span>Customize the cart experience to match your brand</div>
+        </div>
+        <p class="wb-panel-note">Brix combines cart upsell, Shopify slide cart, coupon slider, rewards bar, and AI analytics in one simple platform.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY AOV MATTERS ============ -->
+<section class="section section-soft" id="why-aov">
   <div class="container">
-    <p class="logos-label reveal">Powering carts at</p>
-    <div class="logos-row reveal" style="--d:.1s" aria-label="Customer stores">
+    <div class="f-grid f-grid-flip waov-grid">
+      <div class="f-copy">
+        <p class="eyebrow reveal">Why AOV matters</p>
+        <h2 class="reveal">More traffic is expensive.<br>Higher AOV is smarter</h2>
+        <p class="reveal" style="--d:.04s">Most Shopify brands spend heavily on ads, influencers, emails, and retargeting just to bring shoppers to the store. But when customers reach the cart, many stores lose the opportunity to increase order value.</p>
+        <p class="reveal" style="--d:.08s"><b>That is where Brix helps.</b> Instead of depending only on new traffic, Brix helps you generate more revenue from shoppers who are already ready to buy — using a cart abandonment app Shopify brands trust to keep carts active, not one of the countless best Shopify apps to increase sales that only work by spending more on ads.</p>
+        <p class="reveal" style="--d:.12s">With the right cart upsell app for Shopify, every cart can become an opportunity to add more value, increase revenue, and reduce missed sales.</p>
+      </div>
+      <div class="waov-visual">
+        <div class="waov-glow" aria-hidden="true"></div>
+        <div class="waov-card reveal" style="--d:.1s" id="waovCard">
+          <div class="waov-row waov-row-cost">
+            <span class="waov-ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor"><path d="M18 11v2h4v-2h-4zm-2 6.61c.96.71 2.21 1.65 3.2 2.39.4-.53.8-1.07 1.2-1.6-.99-.74-2.24-1.68-3.2-2.4-.4.54-.8 1.08-1.2 1.61zM20.4 5.6c-.4-.53-.8-1.07-1.2-1.6-.99.74-2.24 1.68-3.2 2.4.4.53.8 1.07 1.2 1.6.96-.72 2.21-1.65 3.2-2.4zM4 9c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h1v4h2v-4h1l5 3V6L8 9H4zm11.5 3c0-1.33-.58-2.53-1.5-3.35v6.69c.92-.81 1.5-2.01 1.5-3.34z"/></svg>
+            </span>
+            <div class="waov-row-body">
+              <p class="waov-row-label">New traffic</p>
+              <p class="waov-row-sub">Ads, influencers, emails, retargeting</p>
+              <div class="waov-meter"><div class="waov-meter-fill" style="width:87%"></div></div>
+            </div>
+            <span class="waov-row-tag">Cost keeps rising</span>
+          </div>
+          <div class="waov-row waov-row-aov">
+            <span class="waov-ic" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+            </span>
+            <div class="waov-row-body">
+              <p class="waov-row-label">Existing carts</p>
+              <p class="waov-row-sub">One more item per order, no new ad spend</p>
+              <div class="waov-meter"><div class="waov-meter-fill" style="width:32%"></div></div>
+            </div>
+            <span class="waov-row-tag waov-row-tag-good">Mostly untapped</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="waov-chips" id="waovChips">
+      <span class="waov-chip"><span class="waov-chip-ic" aria-hidden="true">✓</span>Higher revenue without increasing ad spend</span>
+      <span class="waov-chip"><span class="waov-chip-ic" aria-hidden="true">✓</span>Better return on marketing campaigns</span>
+      <span class="waov-chip"><span class="waov-chip-ic" aria-hidden="true">✓</span>More profitable customer acquisition</span>
+      <span class="waov-chip"><span class="waov-chip-ic" aria-hidden="true">✓</span>Improved cart experience</span>
+      <span class="waov-chip"><span class="waov-chip-ic" aria-hidden="true">✓</span>More conversions from existing shoppers</span>
+    </div>
+    <p class="waov-note reveal" style="--d:.06s">Small cart improvements can create big revenue impact.</p>
+  </div>
+</section>
+
+<!-- ============ BEFORE / AFTER ============ -->
+<section class="section" id="before-after">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Before &amp; after</p>
+      <h2>From passive cart to smart cart</h2>
+    </div>
+    <div class="ba-grid">
+      <div class="ba-col ba-before reveal">
+        <p class="ba-h">Before Brix</p>
+        <ul class="ba-list">
+          <li>Shoppers add one product and move to checkout</li>
+          <li>No smart upsells inside the cart</li>
+          <li>Discount codes are missed or forgotten</li>
+          <li>Free shipping rewards are not clearly visible</li>
+          <li>Frequently Bought Together offers are not shown at the right moment</li>
+          <li>Store owners guess what products to recommend</li>
+          <li>Cart abandonment increases because the cart feels passive</li>
+        </ul>
+      </div>
+      <div class="ba-col ba-after reveal" style="--d:.08s">
+        <p class="ba-h">After Brix</p>
+        <ul class="ba-list">
+          <li>Shoppers see relevant add-ons before checkout</li>
+          <li>AI recommends better upsell opportunities</li>
+          <li>Coupon slider shows live offers in one tap</li>
+          <li>Rewards progress bar motivates shoppers to spend more</li>
+          <li>Frequently Bought Together bundles increase order value</li>
+          <li>Merchants track AOV, upsell revenue, coupon performance, and cart opportunities</li>
+          <li>The cart becomes an active revenue growth channel</li>
+        </ul>
+      </div>
+    </div>
+    <p class="ba-final reveal" style="--d:.12s">Brix helps Shopify brands move from a basic cart drawer to a conversion-focused cart experience built for higher AOV.</p>
+  </div>
+</section>
+
+<!-- ============ TRUSTED BY / COUNTRIES ============ -->
+<section class="section section-soft" id="trusted-by">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Trusted by growing Shopify brands</p>
+      <h2>Global revenue optimization platform for Shopify merchants</h2>
+      <p class="section-sub">Brix is built for modern DTC and ecommerce brands that want to improve cart revenue, reduce missed opportunities, and create a better buying experience. Whether you are running a fashion store, beauty brand, food brand, wellness store, electronics store, or lifestyle brand, Brix helps you increase average order value in Shopify with intelligent recommendations and high-converting cart features.</p>
+    </div>
+    <p class="logos-label reveal" style="--d:.04s">Powering carts at</p>
+    <div class="logos-row reveal" style="--d:.06s" aria-label="Customer stores">
       <span class="wordmark wm-1">CoreEat</span>
       <span class="wordmark wm-2">Puretots</span>
       <span class="wordmark wm-3">MadMinimalist</span>
       <span class="wordmark wm-4">Aadhya&nbsp;Herbal&nbsp;Care</span>
       <span class="wordmark wm-5">Blackape</span>
       <span class="wordmark wm-6">Elther</span>
+    </div>
+    <div class="countries reveal" style="--d:.1s">
+      <p class="countries-label">Countries we serve</p>
+      <div class="countries-row">
+        <span class="country-chip">North America</span>
+        <span class="country-chip">United States</span>
+        <span class="country-chip">Canada</span>
+        <span class="country-chip">Europe</span>
+        <span class="country-chip">Australia</span>
+        <span class="country-chip">Singapore</span>
+        <span class="country-chip">India</span>
+      </div>
+      <p class="countries-note">Brix supports Shopify merchants across global markets with a cart optimization system designed for scalable ecommerce growth.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS BAND / BRIX IN NUMBERS ============ -->
+<section class="stats-band">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Brix in numbers</p>
+      <h2>Revenue growth at scale</h2>
+      <p class="section-sub">Brix is designed to help Shopify brands save time, improve cart performance, and unlock more revenue through Shopify AOV optimization built into every cart interaction.</p>
+    </div>
+    <div class="stats-row stats-row-4">
+      <div class="stat reveal">
+        <b><span data-count="1000" data-suffix="+">0</span></b>
+        <small>hours saved with AI-powered recommendations</small>
+      </div>
+      <div class="stat reveal" style="--d:.08s">
+        <b><span data-count="500000" data-suffix="+">0</span></b>
+        <small>upsell recommendations generated</small>
+      </div>
+      <div class="stat reveal" style="--d:.12s">
+        <b><span data-count="2" data-prefix="$" data-suffix="M+">0</span></b>
+        <small>in additional cart revenue optimized</small>
+      </div>
+      <div class="stat reveal" style="--d:.16s">
+        <b><span data-count="7" data-suffix="+">0</span></b>
+        <small>regions served across global markets</small>
+      </div>
     </div>
   </div>
 </section>
@@ -151,12 +321,12 @@
       <a class="feature-card reveal" href="features.html#cart-editor">
         <div class="fc-visual">
           <div class="mini-cart">
-            <div class="mini-track"><div class="mini-fill"></div></div>
-            <p class="mini-msg">$18 away from free shipping</p>
+            <div class="mini-track"><div class="mini-fill" style="width:82%"></div></div>
+            <p class="mini-msg">82% of the way to a free gift</p>
           </div>
         </div>
-        <h3>Smart Cart Editor</h3>
-        <p>A reward progress bar, coupon slider and AI in-cart upsells that recommend the right add-on and nudge shoppers toward the next reward tier.</p>
+        <h3>Rewards Progress Bar</h3>
+        <p>The Brix cart rewards progress bar shows shoppers how close they are to unlocking free shipping, discounts, gifts or special offers — turning the cart into a gamified shopping experience. Ideal for stores searching for cart progress bar Shopify, rewards bar Shopify app, or gamified cart Shopify solutions.</p>
         <span class="fc-link">Learn more →</span>
       </a>
 
@@ -186,7 +356,7 @@
         <span class="fc-link">Learn more →</span>
       </a>
 
-      <a class="feature-card reveal" href="features.html#bundles">
+      <a class="feature-card reveal" style="--d:.06s" href="features.html#bundles">
         <div class="fc-visual">
           <div class="mini-bundle">
             <span class="mini-rule">Buy 3 from <b>Winter</b></span>
@@ -199,7 +369,7 @@
         <span class="fc-link">Learn more →</span>
       </a>
 
-      <a class="feature-card reveal" style="--d:.06s" href="features.html#analytics">
+      <a class="feature-card reveal" style="--d:.12s" href="features.html#analytics">
         <div class="fc-visual">
           <div class="mini-chart">
             <svg viewBox="0 0 200 82" aria-hidden="true">
@@ -238,7 +408,7 @@
         <span class="fc-link">Learn more →</span>
       </a>
 
-      <a class="feature-card reveal" style="--d:.12s" href="features.html#ai-chat">
+      <a class="feature-card reveal" href="features.html#ai-chat">
         <div class="fc-visual">
           <div class="mini-chat">
             <div class="mc-head">
@@ -256,295 +426,7 @@
       </a>
 
     </div>
-  </div>
-</section>
-
-<!-- ============ DEEP DIVE: SMART CART ============ -->
-<section class="section" id="smart-cart">
-  <div class="container dd-grid">
-    <div class="dd-copy">
-      <p class="eyebrow reveal">Smart Cart Editor</p>
-      <h2 class="reveal">The cart that keeps selling after they add to it</h2>
-      <div class="dd-step reveal" data-step="1">
-        <h3>Reward tiers shoppers can see</h3>
-        <p>Set goals — free shipping at $75, a gift at $120, 10% off at $180. The bar fills live as they shop, and every unlock gets a little celebration. Shoppers don’t abandon a cart that’s two dollars from a reward.</p>
-      </div>
-      <div class="dd-step reveal" data-step="2">
-        <h3>Upsells that fit the cart</h3>
-        <p>Brix reads what’s already in the drawer and suggests the product most likely to be added — sized to close the gap to the next tier, not a random bestseller.</p>
-      </div>
-      <div class="dd-step reveal" data-step="3">
-        <h3>Coupons inside the cart</h3>
-        <p>A swipeable coupon slider lives right above checkout. One tap applies the deal — no leaving the cart to hunt for codes on a coupon site.</p>
-      </div>
-      <a class="btn btn-ghost reveal" href="features.html#cart-editor">Explore the Cart Editor →</a>
-    </div>
-    <div class="dd-visual">
-      <div class="dd-sticky reveal">
-        <div class="cart-mock cart-mock-static">
-          <div class="cm-head"><span class="cm-title">Your cart</span><span class="cm-badge">2 items</span></div>
-          <div class="cm-goal">
-            <p class="cm-msg"><b>Free shipping unlocked!</b> $38.00 to a free gift</p>
-            <div class="cm-track">
-              <div class="cm-fill" style="width:63%"></div>
-              <div class="cm-node is-unlocked" style="left:57.7%"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
-              <div class="cm-node" style="left:92.3%"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2z"/></svg></div>
-            </div>
-          </div>
-          <ul class="cm-items">
-            <li class="cm-item is-in"><span class="cm-thumb th-a"></span><span class="cm-item-info"><b>Alpine hoodie</b><small>Moss · M</small></span><span class="cm-price">$48.00</span></li>
-            <li class="cm-item is-in"><span class="cm-thumb th-b"></span><span class="cm-item-info"><b>Trail beanie</b><small>Charcoal</small></span><span class="cm-price">$34.00</span></li>
-          </ul>
-          <div class="cm-upsell is-on"><span class="cm-thumb th-c"></span><span class="cm-item-info"><b>Camp mug set</b><small>Closes the gap to your gift</small></span><button class="cm-add" tabindex="-1">+ Add · $42</button></div>
-          <div class="cm-coupon-row">
-            <span class="mini-coupon mc-active">SAVE10</span>
-            <span class="mini-coupon">BUNDLE15</span>
-          </div>
-          <div class="cm-foot"><span>Subtotal</span><b>$82.00</b></div>
-          <button class="cm-checkout" tabindex="-1">Checkout</button>
-        </div>
-        <div class="dd-callout dd-callout-1" data-for="1">Reward tiers</div>
-        <div class="dd-callout dd-callout-2" data-for="2">Smart upsell</div>
-        <div class="dd-callout dd-callout-3" data-for="3">Tap-to-apply coupons</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ DEEP DIVE: BUNDLE BUILDER ============ -->
-<section class="section section-soft" id="bundles-home">
-  <div class="container dd-grid dd-grid-flip">
-    <div class="dd-copy">
-      <p class="eyebrow reveal">Bundle Builder</p>
-      <h2 class="reveal">Drag a collection in. Ship a deal out.</h2>
-      <p class="dd-lead reveal">Build combo offers visually — no discount-code gymnastics. Pick a collection, set the rule, and Brix generates the bundle page, the cart logic and the discount automatically.</p>
-      <ul class="dd-list reveal">
-        <li><b>Collection rules</b> — “Buy 3 from Winter, save $100” takes about ten seconds to build.</li>
-        <li><b>Mix-and-match pages</b> — shoppers assemble their own kit and watch the price drop as they add.</li>
-        <li><b>Tiered kits</b> — starter, plus and complete versions of the same bundle, priced to pull people upward.</li>
-      </ul>
-      <a class="btn btn-ghost reveal" href="features.html#bundles">Explore the Bundle Builder →</a>
-    </div>
-    <div class="dd-visual">
-      <div class="dd-sticky reveal">
-        <div class="builder-mock">
-          <div class="bm-head">Bundle Builder <span class="bm-status">● Live</span></div>
-          <div class="bm-body">
-            <div class="bm-col">
-              <p class="bm-label">Your collections</p>
-              <span class="bm-chip">Hoodies</span>
-              <span class="bm-chip">Candles</span>
-              <span class="bm-chip bm-chip-drag">Winter <em>⠿</em></span>
-              <span class="bm-chip">Serums</span>
-            </div>
-            <div class="bm-col">
-              <p class="bm-label">Bundle rule</p>
-              <div class="bm-drop">
-                <span class="bm-chip bm-chip-placed">Winter</span>
-                <p class="bm-rule">Buy <b>3</b> items → save <b>$100</b></p>
-              </div>
-              <div class="bm-toggle-row"><span class="bm-toggle"><i></i></span> Combo page: on</div>
-            </div>
-          </div>
-          <div class="bm-preview">
-            <p class="bm-label">Live preview</p>
-            <div class="bm-prods">
-              <span class="mini-prod th-a"></span>
-              <span class="mini-prod th-b"></span>
-              <span class="mini-prod th-c"></span>
-            </div>
-            <p class="bm-price"><s>$297</s> <b>$197</b> <span class="bm-save-tag">You save $100</span></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ BRIX AI ============ -->
-<section class="section section-dark" id="brix-ai">
-  <div class="ai-gradient" aria-hidden="true"></div>
-  <div class="container dd-grid">
-    <div class="dd-copy">
-      <p class="eyebrow eyebrow-warm reveal">Brix AI</p>
-      <h2 class="reveal">Tell it the goal.<br>It does the rest.</h2>
-      <p class="dd-lead reveal">Brix AI watches every cart, every tier and every offer in your store. Ask for an outcome in plain English and it makes the changes itself — then keeps tuning them daily.</p>
-      <ul class="ai-points reveal">
-        <li><span class="ai-ic">◆</span> Moves reward tiers to match how your shoppers actually spend</li>
-        <li><span class="ai-ic">◆</span> Turns offers on and off by product, collection or season</li>
-        <li><span class="ai-ic">◆</span> Reports every change it makes — you can undo any of them</li>
-      </ul>
-    </div>
-    <div class="dd-visual">
-      <div class="chat-mock reveal" id="aiChat">
-        <div class="chat-head">
-          <span class="chat-avatar" aria-hidden="true">
-            <img src="assets/brix-mark-light.png" alt="" style="width:19px;height:auto;">
-          </span>
-          <span><b>Brix AI</b><small>Optimizing your store</small></span>
-        </div>
-        <div class="chat-body">
-          <div class="chat-bubble cb-user" id="cbUser"><span id="cbUserText"></span><span class="chat-caret" id="cbCaret"></span></div>
-          <div class="chat-typing" id="cbTyping"><span></span><span></span><span></span></div>
-          <div class="chat-bubble cb-ai" id="cbAi">On it. I’ve raised your free-shipping tier to <b>$80</b>, added a gift tier at <b>$130</b>, and turned on Frequently&nbsp;Bought&nbsp;Together for <b>214 products</b>.</div>
-          <div class="chat-action" id="cbAction">
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-            3 changes live · monitoring results
-          </div>
-        </div>
-        <div class="chat-input" aria-hidden="true"><span>Ask Brix AI anything…</span><i>↑</i></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ ANALYTICS ============ -->
-<section class="section" id="analytics-home">
-  <div class="container">
-    <div class="section-head reveal">
-      <p class="eyebrow">Brix AI Analysis</p>
-      <h2>Track revenue opportunities in real time</h2>
-      <p class="section-sub">Brix AI Analysis tracks upsell revenue, AOV growth, coupon usage and missed cart opportunities in one dashboard — then tells you exactly what to improve next.</p>
-    </div>
-    <div class="dash-mock reveal" style="--d:.1s">
-      <div class="dash-stats">
-        <div class="dash-stat">
-          <small>Average order value</small>
-          <b>$86.40</b>
-          <span class="dash-delta">▲ 32% vs. before Brix</span>
-        </div>
-        <div class="dash-stat">
-          <small>Revenue from Brix offers</small>
-          <b>$12,940</b>
-          <span class="dash-delta">▲ 18% this month</span>
-        </div>
-        <div class="dash-stat">
-          <small>Upsell attach rate</small>
-          <b>24%</b>
-          <span class="dash-delta">▲ 6 pts</span>
-        </div>
-      </div>
-      <div class="dash-chart">
-        <div class="dash-chart-head">
-          <span>Average order value with Brix — last 6 months</span>
-        </div>
-        <div class="chart-wrap" id="aovChart">
-          <svg viewBox="0 0 640 240" preserveAspectRatio="none" aria-label="Line chart: average order value rising from $58 in January to $86 in June">
-            <g class="chart-grid">
-              <line x1="48" y1="24"  x2="628" y2="24"/>
-              <line x1="48" y1="86"  x2="628" y2="86"/>
-              <line x1="48" y1="148" x2="628" y2="148"/>
-              <line x1="48" y1="210" x2="628" y2="210"/>
-            </g>
-            <g class="chart-ylabels">
-              <text x="40" y="28">$90</text>
-              <text x="40" y="90">$75</text>
-              <text x="40" y="152">$60</text>
-              <text x="40" y="214">$45</text>
-            </g>
-            <defs>
-              <linearGradient id="aovFill" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#0B86CC" stop-opacity=".22"/>
-                <stop offset="100%" stop-color="#0B86CC" stop-opacity="0"/>
-              </linearGradient>
-            </defs>
-            <path class="chart-area" d="M64 156.3 L170 143.9 L276 119.1 L382 98.4 L488 69.5 L594 40.5 L594 210 L64 210 Z" fill="url(#aovFill)"/>
-            <path class="chart-line" d="M64 156.3 L170 143.9 L276 119.1 L382 98.4 L488 69.5 L594 40.5" fill="none"/>
-            <g class="chart-xlabels">
-              <text x="64" y="232">Jan</text>
-              <text x="170" y="232">Feb</text>
-              <text x="276" y="232">Mar</text>
-              <text x="382" y="232">Apr</text>
-              <text x="488" y="232">May</text>
-              <text x="594" y="232">Jun</text>
-            </g>
-            <circle class="chart-end" cx="594" cy="40.5" r="5"/>
-            <g class="chart-endlabel">
-              <rect x="548" y="12" rx="6" width="58" height="22"/>
-              <text x="577" y="27">$86.40</text>
-            </g>
-          </svg>
-          <div class="chart-hover" id="chartHover" aria-hidden="true">
-            <div class="chart-crosshair"></div>
-            <div class="chart-dot"></div>
-            <div class="chart-tip"><b></b><small></small></div>
-          </div>
-        </div>
-      </div>
-      <div class="dash-insights">
-        <div class="insight-card">
-          <span class="insight-tag">AI insight</span>
-          <p>Carts between <b>$60–70</b> rarely reach your $100 tier. Adding a <b>$75 tier</b> could convert 340 carts/month.</p>
-          <span class="insight-apply">Apply suggestion</span>
-        </div>
-        <div class="insight-card">
-          <span class="insight-tag">AI insight</span>
-          <p><b>Trail beanie</b> attaches to hoodies at 3× the average rate. Featuring it in the cart could add <b>~$1,900/mo</b>.</p>
-          <span class="insight-apply">Apply suggestion</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ STATS BAND ============ -->
-<section class="stats-band">
-  <div class="container stats-row">
-    <div class="stat reveal">
-      <b><span data-count="1000" data-suffix="+">0</span></b>
-      <small>hours saved with AI-powered recommendations</small>
-    </div>
-    <div class="stat reveal" style="--d:.08s">
-      <b><span data-count="500000" data-suffix="+">0</span></b>
-      <small>upsell recommendations generated</small>
-    </div>
-    <div class="stat reveal" style="--d:.16s">
-      <b><span data-count="7" data-suffix="+">0</span></b>
-      <small>regions served across global markets</small>
-    </div>
-  </div>
-</section>
-
-<!-- ============ TESTIMONIALS ============ -->
-<section class="section section-soft" id="testimonials">
-  <div class="container">
-    <div class="section-head section-head-row reveal">
-      <div>
-        <p class="eyebrow">Merchants on Brix</p>
-        <h2>What merchants say about Brix</h2>
-      </div>
-      <div class="carousel-nav">
-        <button class="car-btn" id="carPrev" aria-label="Previous testimonials">←</button>
-        <button class="car-btn" id="carNext" aria-label="Next testimonials">→</button>
-      </div>
-    </div>
-    <div class="carousel" id="carousel">
-      <figure class="t-card reveal">
-        <span class="t-lift">+41% AOV</span>
-        <blockquote>“Brix helped us turn our cart into a real sales channel. The upsell and rewards bar features made it easier for customers to add more before checkout.”</blockquote>
-        <figcaption><span class="t-avatar av-1">SR</span><span><b>Sana Rahim</b><small>MAREA · swimwear</small></span></figcaption>
-      </figure>
-      <figure class="t-card reveal" style="--d:.06s">
-        <span class="t-lift">+28% AOV</span>
-        <blockquote>“Frequently Bought Together and the coupon slider solved two major problems for us. Customers could discover related products and apply discounts without leaving the cart.”</blockquote>
-        <figcaption><span class="t-avatar av-2">DK</span><span><b>Daniel Kim</b><small>Voltbrew · coffee gear</small></span></figcaption>
-      </figure>
-      <figure class="t-card reveal" style="--d:.12s">
-        <span class="t-lift">+35% AOV</span>
-        <blockquote>“Brix AI Analysis gave us clarity on what was working. We stopped guessing and started optimizing our cart based on real opportunities.”</blockquote>
-        <figcaption><span class="t-avatar av-3">AO</span><span><b>Amara Obi</b><small>Lume &amp; Co · skincare</small></span></figcaption>
-      </figure>
-      <figure class="t-card">
-        <span class="t-lift">+52% AOV</span>
-        <blockquote>“Setup was simple, customization was clean, and the cart experience felt premium. Brix is a strong AOV booster for Shopify brands.”</blockquote>
-        <figcaption><span class="t-avatar av-4">MT</span><span><b>Marco Tan</b><small>Fernway · outdoor apparel</small></span></figcaption>
-      </figure>
-      <figure class="t-card">
-        <span class="t-lift">+23% AOV</span>
-        <blockquote>“The insight cards are like having a CRO consultant on retainer, except it costs $29 a month.”</blockquote>
-        <figcaption><span class="t-avatar av-5">LP</span><span><b>Lena Petrov</b><small>Kindwood · home goods</small></span></figcaption>
-      </figure>
-    </div>
+    <p class="section-more reveal" style="--d:.1s"><a href="features.html">Explore All Features →</a></p>
   </div>
 </section>
 
@@ -554,43 +436,45 @@
     <div class="section-head reveal">
       <p class="eyebrow">Pricing</p>
       <h2>Starts free. Scales when you do.</h2>
-      <p class="section-sub">Starter is free forever. Pro and Scale are billed monthly — cancel anytime.</p>
+      <p class="section-sub">Free is free forever. Starter and Pro are billed monthly — cancel anytime.</p>
     </div>
     <div class="price-grid">
       <div class="price-card reveal">
-        <h3>Starter</h3>
+        <span class="price-flag price-flag-ghost">Free forever</span>
+        <h3>Free</h3>
         <p class="price"><b>$0</b><span>/month</span></p>
-        <p class="price-note">Free forever — launch and learn</p>
+        <p class="price-note">Launch and learn — 50 orders/month</p>
         <ul class="price-list">
-          <li>Up to 50 orders/month</li>
-          <li>Slide-out cart drawer, auto-open on add to cart</li>
-          <li>Coupon creator &amp; checkout button styling</li>
+          <li>Cart Drawer, Announcement Bar &amp; Empty Cart Customization</li>
+          <li>AI BRIX — 10 credits/month</li>
+          <li>Frequently Bought Together &amp; Progress Bar — preview only</li>
           <li>Basic analytics (revenue, AOV, clicks)</li>
         </ul>
         <a class="btn btn-outline price-cta" href="#install">Install free ↗</a>
       </div>
       <div class="price-card price-card-hot reveal" style="--d:.06s">
         <span class="price-flag">Most popular</span>
-        <h3>Pro</h3>
+        <h3>Starter</h3>
         <p class="price"><b>$29</b><span>/month</span></p>
-        <p class="price-note">Grow your AOV — up to 500 orders/month</p>
+        <p class="price-note">Grow your AOV — 500 orders/month</p>
         <ul class="price-list">
-          <li>Free-shipping progress bar + confetti</li>
-          <li>AI in-cart upsells &amp; Frequently Bought Together</li>
-          <li>Build a combo — 3 layouts + AI content</li>
-          <li>AI agent assistant &amp; full analytics + funnels</li>
+          <li>AI Cart Upsell &amp; Frequently Bought Together, fully unlocked</li>
+          <li>Build a Combo — up to 3 templates</li>
+          <li>Full Analytics dashboard</li>
+          <li>Priority email &amp; 24/7 AI support</li>
         </ul>
         <a class="btn btn-primary price-cta" href="#install">Start free trial ↗</a>
       </div>
       <div class="price-card reveal" style="--d:.12s">
-        <h3>Scale</h3>
+        <span class="price-flag price-flag-ghost">Best value</span>
+        <h3>Pro</h3>
         <p class="price"><b>$79</b><span>/month</span></p>
-        <p class="price-note">High-volume brands — unlimited orders</p>
+        <p class="price-note">High-revenue brands — unlimited orders</p>
         <ul class="price-list">
-          <li>Unlimited combo templates &amp; AI content</li>
-          <li>Custom bundle layout builder</li>
-          <li>Multi-store support &amp; dedicated onboarding</li>
-          <li>Slack / direct support channel</li>
+          <li>Unlimited Build a Combo templates</li>
+          <li>AI Analytics, Advanced AI Analytics &amp; Unlimited AI Agents</li>
+          <li>AI BRIX — 50 credits/month</li>
+          <li>Removes the “Powered by BRIX” watermark</li>
         </ul>
         <a class="btn btn-outline price-cta" href="#install">Start free trial ↗</a>
       </div>
@@ -625,7 +509,7 @@
       </details>
       <details class="faq-item">
         <summary>Can I try the paid features first?<span class="faq-ic"></span></summary>
-        <p>Pro and Scale both start with a free trial — billed monthly through Shopify afterwards, cancel anytime. Starter is free forever, no trial needed.</p>
+        <p>Starter and Pro both start with a 14-day free trial — billed monthly through Shopify afterwards, cancel anytime. Free is free forever, no trial needed.</p>
       </details>
       <details class="faq-item">
         <summary>What happens if I uninstall?<span class="faq-ic"></span></summary>
@@ -635,12 +519,70 @@
   </div>
 </section>
 
+<!-- ============ CASE STUDY (HOME TEASER) ============ -->
+<section class="section section-soft" id="case-study-home">
+  <div class="container container-narrow">
+    <div class="section-head reveal">
+      <p class="eyebrow">Case study</p>
+      <h2>How Brix helps Shopify brands increase cart revenue</h2>
+    </div>
+    <div class="cs-teaser" id="csTeaser">
+      <p>A growing Shopify brand was getting traffic, product views, and add-to-carts — but most shoppers were checking out with only one product.</p>
+      <p>After using Brix, the brand added cart upsells, Frequently Bought Together offers, a coupon slider, and a rewards progress bar inside the cart drawer.</p>
+      <a class="btn btn-primary cs-teaser-cta" href="case-studies.html">View Case Studies →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section" id="testimonials">
+  <div class="container">
+    <div class="section-head section-head-row reveal">
+      <div>
+        <p class="eyebrow">Merchants on Brix</p>
+        <h2>What merchants say about Brix</h2>
+      </div>
+      <div class="carousel-nav">
+        <button class="car-btn" id="carPrev" aria-label="Previous testimonials">←</button>
+        <button class="car-btn" id="carNext" aria-label="Next testimonials">→</button>
+      </div>
+    </div>
+    <div class="carousel" id="carousel">
+      <figure class="t-card reveal">
+        <span class="t-lift">+41% AOV</span>
+        <blockquote>“Brix helped us turn our cart into a real sales channel. The upsell and rewards bar features made it easier for customers to add more before checkout.”</blockquote>
+        <figcaption><span class="t-avatar av-1">SR</span><span><b>Sana Rahim</b></span></figcaption>
+      </figure>
+      <figure class="t-card reveal" style="--d:.06s">
+        <span class="t-lift">+28% AOV</span>
+        <blockquote>“Frequently Bought Together and the coupon slider solved two major problems for us. Customers could discover related products and apply discounts without leaving the cart.”</blockquote>
+        <figcaption><span class="t-avatar av-2">DK</span><span><b>Daniel Kim</b></span></figcaption>
+      </figure>
+      <figure class="t-card reveal" style="--d:.12s">
+        <span class="t-lift">+35% AOV</span>
+        <blockquote>“Brix AI Analysis gave us clarity on what was working. We stopped guessing and started optimizing our cart based on real opportunities.”</blockquote>
+        <figcaption><span class="t-avatar av-3">AO</span><span><b>Amara Obi</b></span></figcaption>
+      </figure>
+      <figure class="t-card">
+        <span class="t-lift">+52% AOV</span>
+        <blockquote>“Setup was simple, customization was clean, and the cart experience felt premium. Brix is a strong AOV booster for Shopify brands.”</blockquote>
+        <figcaption><span class="t-avatar av-4">MT</span><span><b>Marco Tan</b></span></figcaption>
+      </figure>
+      <figure class="t-card">
+        <span class="t-lift">+23% AOV</span>
+        <blockquote>“The insight cards are like having a CRO consultant on retainer, except it costs $29 a month.”</blockquote>
+        <figcaption><span class="t-avatar av-5">LP</span><span><b>Lena Petrov</b></span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
 <!-- ============ FINAL CTA ============ -->
 <section class="cta-final" id="install">
   <div class="cta-gradient" aria-hidden="true"></div>
   <div class="container cta-in">
     <h2 class="reveal">Ready to turn your Shopify cart into a growth engine?</h2>
-    <p class="reveal" style="--d:.08s">Increase AOV, improve the cart experience and make smarter growth decisions — with AI-powered cart optimization.</p>
+    <p class="reveal" style="--d:.08s">Brix helps you increase AOV, improve the cart experience, reduce missed revenue, and make smarter growth decisions — with AI-powered cart optimization.</p>
     <a class="btn btn-white btn-lg reveal" style="--d:.16s" href="#" id="ctaInstall">
       <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M15.34 3.03c-.09-.06-.19-.06-.31-.03l-.58.18c-.14-.4-.33-.83-.61-1.26C13.28.98 12.6.5 11.9.5h-.15c-.5-.62-1.13-.9-1.68-.88-1.05.03-2.09.79-2.94 2.13-.6.95-1.05 2.14-1.18 3.06l-2.1.65c-.62.2-.64.22-.72.8L1.5 19.44 14.29 22 21 20.55S15.42 3.09 15.34 3.03z"/></svg>
       Start Growing With Brix
@@ -679,9 +621,9 @@
     <div class="footer-col">
       <p class="footer-h">Case studies</p>
       <a href="case-studies.html">All case studies</a>
-      <a href="case-studies.html#cs-marea">Swimwear · +41% AOV</a>
-      <a href="case-studies.html#cs-fernway">Outdoor apparel · +52%</a>
-      <a href="case-studies.html#cs-lume">Skincare · +35% AOV</a>
+      <a href="case-study-complete-look-recommendations.html">Fashion · +26% AOV</a>
+      <a href="case-study-rewards-progress-bar.html">Rewards bar · +23% cart value</a>
+      <a href="case-study-aov-without-ad-spend.html">Cart upsells · +23% AOV</a>
     </div>
     <div class="footer-news">
       <p class="footer-h">The AOV memo</p>
@@ -696,12 +638,12 @@
   </div>
   <div class="container footer-base">
     <span>© 2026 Brix. Built for Shopify.</span>
-    <span class="footer-legal"><a href="#">Privacy Policy</a> · <a href="#">Terms &amp; Conditions</a></span>
+    <span class="footer-legal"><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms &amp; Conditions</a></span>
   </div>
 </footer>
 
 <script src="js/vendor/gsap.min.js"></script>
 <script src="js/vendor/ScrollTrigger.min.js"></script>
-<script src="js/main.js?v=2"></script>
+<script src="js/main.js?v=5"></script>
 </body>
 </html>
